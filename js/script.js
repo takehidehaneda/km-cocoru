@@ -29,6 +29,9 @@ const galleryImages =
 document.querySelectorAll(".gallery-grid img");
 galleryImages.forEach(image=>{
     image.addEventListener("click",()=>{
+        if(window.innerWidth <= 768){
+            return;
+        }
         if(photoModal && modalImage){
             modalImage.src =
             image.src;
