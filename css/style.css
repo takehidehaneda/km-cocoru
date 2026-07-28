@@ -340,6 +340,16 @@ footer a {
     display:block;
 }
 /* =====================
+ 予約注意
+===================== */
+.reservation-warning {
+    margin-top:30px;
+    padding:14px 25px 18px;
+    background:#f8f2e8;
+    border-radius:15px;
+    border:1px solid #e5d8c5;
+}
+/* =====================
  smartphone
 ===================== */
 @media(max-width:767px){
