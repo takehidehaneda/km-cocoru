@@ -77,3 +77,16 @@ if(modal){
         }
     });
 }
+// FAQ accordion
+const faqQuestions = document.querySelectorAll(".faq-question");
+faqQuestions.forEach(question => {
+    question.addEventListener("click", () => {
+        const item = question.parentElement;
+        item.classList.toggle("active");
+        const icon = question.querySelector("span");
+        icon.textContent =
+            item.classList.contains("active")
+            ? "−"
+            : "＋";
+    });
+});
