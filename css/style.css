@@ -129,7 +129,7 @@ a {
     margin-top:35px;
 }
 /* =====================
- ボタン
+ button
 ===================== */
 .line-button,
 .tel-button {
@@ -340,7 +340,7 @@ footer a {
     display:block;
 }
 /* =====================
- 予約注意
+ reservation-warning
 ===================== */
 .reservation-warning {
     margin-top:30px;
@@ -348,6 +348,12 @@ footer a {
     background:#f8f2e8;
     border-radius:15px;
     border:1px solid #e5d8c5;
+}
+/* =====================
+ mobile-only
+===================== */
+.mobile-only {
+    display:none;
 }
 /* =====================
  smartphone
@@ -423,5 +429,8 @@ h2 {
 }
 .map iframe {
     height:250px;
+}
+.mobile-only {
+    display:block;
 }
 }
