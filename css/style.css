@@ -156,7 +156,7 @@ a {
 ===================== */
 .section,
 .notice {
-    padding:70px 0;
+    padding:10px 0;
 }
 .notice {
     background:var(--beige);
@@ -376,7 +376,7 @@ footer a {
 }
 .section,
 .notice {
-    padding:45px 0;
+    padding:10px 0;
 }
 .gallery-grid {
     grid-template-columns:1fr;
