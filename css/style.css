@@ -298,14 +298,24 @@ h2 {
  footer
 ===================== */
 footer {
-    background:var(--brown-dark);
-    color:white;
+    background:#f3eadc;
+    color:#5a4632;
     text-align:center;
-    padding:45px 20px;
+    padding:10px 10px;
+    font-size:13px;
 }
 .footer-name {
-    font-size:1.3rem;
+    font-size:16px;
     font-weight:bold;
+    margin-bottom:6px;
+}
+footer a {
+    color:#5a4632;
+}
+.copyright {
+    margin-top:8px;
+    font-size:11px;
+    opacity:.7;
 }
 .modal-open {
     margin-top:20px;
