@@ -204,7 +204,8 @@ h2 {
     background:white;
     padding:25px;
     border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    border:1px solid #eee4d6;
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
 }
 .feature-card h3 {
     color:var(--brown);
@@ -223,6 +224,7 @@ h2 {
     margin-bottom:45px;
     border-radius:18px;
     box-shadow:0 5px 15px rgba(0,0,0,.05);
+    border:1px solid #eee4d6;
 }
 .flow-list li:not(:last-child)::after {
     content:"";
@@ -354,6 +356,12 @@ footer a {
 ===================== */
 .mobile-only {
     display:none;
+}
+/* =====================
+ section card
+===================== */
+.section .card {
+    border:1px solid #eee4d6;
 }
 /* =====================
  smartphone
