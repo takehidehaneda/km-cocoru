@@ -491,4 +491,10 @@ h2 {
 .mobile-only {
     display:block;
 }
+/* =====================
+ hidden
+===================== */
+}
+.hidden {
+  display:none;
 }
