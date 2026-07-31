@@ -414,6 +414,17 @@ footer a {
     content:"−";
 }
 /* =====================
+ link
+===================== */
+.qa-link {
+  color: #8b5e34;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.qa-link:hover {
+  opacity: 0.7;
+}
+/* =====================
  smartphone
 ===================== */
 @media(max-width:767px){
