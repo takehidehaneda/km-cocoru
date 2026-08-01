@@ -1,0 +1,95 @@
+/* =====================
+   営業日カレンダー
+===================== */
+.calendar-wrap {
+    display: grid;
+    gap: 30px;
+}
+@media (min-width:768px) {
+    .calendar-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* 月カード */
+.month {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, .08);
+}
+.month h3 {
+    text-align: center;
+    color: var(--brown);
+    margin-top: 0;
+}
+/* カレンダー */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+}
+.week {
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+}
+.week.sun {
+    color: #c85b5b;
+}
+.week.sat {
+    color: #557aa3;
+}
+/* 日付 */
+.day {
+  min-height: 75px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 14px;
+}
+.day span {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+}
+/* 予約 */
+.reserve {
+    color: var(--brown);
+}
+/* 休み */
+.closed span {
+    color: #c85b5b;
+    font-weight: bold;
+}
+/* 曜日 */
+.sun {
+    color: #c85b5b;
+}
+.sat {
+    color: #557aa3;
+}
+/* 空白 */
+.empty {
+    background: transparent;
+}
+/* 営業日の予約表示 */
+.open::after {
+  content: "空き：\A" attr(data-count) "卓";
+  white-space: pre;
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--brown);
+}
+/* 休み表示 */
+.day.closed span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #c85b5b;
+  font-weight: bold;
+}
+.day.closed {
+  background: #f8eee8;
+}
