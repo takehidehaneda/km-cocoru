@@ -50,11 +50,11 @@ a {
     box-shadow: 0 2px 15px rgba(0, 0, 0, .08);
 }
 .header-inner {
-    height: 75px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 10px 30px;
 }
 .logo {
     font-size: 13px;
@@ -65,25 +65,41 @@ a {
     font-size: 26px;
     color: var(--brown);
 }
-.nav {
-    display: flex;
-    gap: 28px;
-    font-size: 14px;
-}
 .nav a:hover {
-    color: var(--brown);
+    background: var(--brown);
+    color: #fff;
 }
 .menu-button {
-    display: none;
+    display: block;
     background: none;
     border: 0;
     font-size: 28px;
+    cursor: pointer;
 }
 /* =====================
  mobile menu
 ===================== */
 .mobile-menu {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 280px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
     display: none;
+    z-index: 99;
+}
+.mobile-menu.active {
+    display: block;
+}
+.mobile-menu a {
+    display: block;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: bold;
 }
 /* =====================
  hero
@@ -434,13 +450,16 @@ footer a {
     padding-left: 20px;
     padding-right: 20px;
 }
+.section {
+    scroll-margin-top: 60px;
+}
+.notice  {
+    scroll-margin-top: 60px;
+}
 /* =====================
  smartphone
 ===================== */
 @media(max-width:767px) {
-.header-inner {
-    padding: 0 15px;
-}
 .nav {
     display: none;
 }
@@ -451,7 +470,7 @@ footer a {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 75px;
+    top: 0px;
     width: 100%;
     background: white;
     z-index: 90;
@@ -514,6 +533,12 @@ h2 {
 }
 .sp-br {
     display: block;
+}
+.section {
+    scroll-margin-top: 60px;
+}
+.notice  {
+    scroll-margin-top: 60px;
 }
 /* =====================
  hidden

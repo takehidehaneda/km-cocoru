@@ -93,3 +93,9 @@
 .day.closed {
   background: #f8eee8;
 }
+.day.holiday {
+    color: #c85b5b;
+}
+main {
+    padding-top: 70px;
+}
